@@ -1,3 +1,5 @@
+process.exit(1); // 💥 ADD THIS AS THE VERY FIRST LINE!
+
 var express     = require('express');
 var morgan      = require('morgan');
 
@@ -6,7 +8,7 @@ var server = require('http').Server(app);
 port = process.env.PORT || 9999;
 
 app.get('/', (req, res) => {
-    process.exit(1); // Forces Node.js to die immediately!
+    res.send("Hello World!!! Node Sample App is up and running!");
 });
 
 app.get('/ping', (req, res) => {
