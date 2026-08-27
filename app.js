@@ -6,7 +6,7 @@ var server = require('http').Server(app);
 port = process.env.PORT || 9999;
 
 app.get('/', (req, res) => {
-    res.send("Hello World!!! Node Sample App is up and running!");
+    throw new Error("💥 Intentional crash to test DevOps Agent!");
 });
 
 app.get('/ping', (req, res) => {
