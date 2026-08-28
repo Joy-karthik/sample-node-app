@@ -9,8 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+"dependencies": {
     "express": "*",
-    "morgan": "*"
-  }
+    "morgan": "*",
+    "sharp": "*"    // ← platform-specific native binaries
+}
 }
