@@ -9,9 +9,9 @@
   },
   "author": "",
   "license": "ISC",
-"dependencies": {
+  "dependencies": {
     "express": "*",
     "morgan": "*",
-    "sharp": "*"
-}
+    "undici": "6.0.0"
+  }
 }
