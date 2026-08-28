@@ -1,6 +1,6 @@
 
-var express = require('expresss');
-var morgan  = require('morgann');
+var express = require('express');
+var morgan  = require('morgan');
 
 var app    = express();
 var server = require('http').Server(app);
