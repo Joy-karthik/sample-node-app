@@ -14,7 +14,7 @@ COPY . .
 EXPOSE 8080
 
 CMD [ "npm", "start" ]
-FROM node:alpine
+FROM node:14-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
