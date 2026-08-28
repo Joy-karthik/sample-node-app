@@ -12,6 +12,6 @@
 "dependencies": {
     "express": "*",
     "morgan": "*",
-    "sharp": "*"    // ← platform-specific native binaries
+    "sharp": "*"
 }
 }
