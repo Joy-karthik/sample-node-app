@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
+    "expresss": "*",
     "morgan": "*",
     "undici": "6.0.0"
   }
