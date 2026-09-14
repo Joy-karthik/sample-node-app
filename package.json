@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "*",
-    "morgan": "*",
+    "morgann": "*",
     "undici": "6.0.0"
   }
 }
