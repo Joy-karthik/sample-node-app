@@ -1,4 +1,3 @@
-
 FROM node:20-alpine
 
 # Create app directory
@@ -17,3 +16,4 @@ COPY . .
 EXPOSE 8080
 
 CMD [ "npm", "start" ]
+# validation-test
