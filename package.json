@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
+    "express": "^4.19.2",
     "morgan": "*",
     "undici": "7.0.0"
   }
