@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json for reproducible installs
 COPY package.json package-lock.json* .
 
-RUN npm ci --omit=dev
+RUN npm install
 
 # Bundle app source
 COPY . .
