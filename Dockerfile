@@ -1,10 +1,9 @@
-FROM node:14-alpine
+FROM node:20-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
 
 # Install app dependencies
-# Copy package.json and package-lock.json for reproducible installs
 COPY package.json package-lock.json* .
 
 RUN npm install
