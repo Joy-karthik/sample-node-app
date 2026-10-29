@@ -1,16 +1,14 @@
-
-
-
-FROM node:14-alpine
+FROM node:18-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
 
 # Install app dependencies
 # Copy package.json and package-lock.json for reproducible installs
-COPY package.json package-lock.json* .
+COPY package.json package-lock.json ./
 
-RUN npm install
+# Use npm ci against the committed lockfile for deterministic, pinned installs
+RUN npm ci --omit=dev
 
 # Bundle app source
 COPY . .
